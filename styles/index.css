@@ -1,10 +1,22 @@
+  body {
+    margin: 0;
+  }
+
+  .container__cards {
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   .container__card {
+    display: inline-block;
     max-width: 400px;
+    max-height: 400px;
     transition: 0.5s;
     border-radius: .5rem;
     border-bottom: .25rem solid #4C4E61;
     overflow: hidden;
-    margin: 1.5rem auto;
+    margin: .5rem auto;
     padding: .5rem;
     background-color: #F9F9F9;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -15,8 +27,8 @@
   }
 
   .container__card img {
-    width: 100%;
-    max-height: 200px;
+    width: 400px;
+    height: 200px;
     border-radius: .5rem .5rem 0rem 0rem;
     object-fit: cover;
     object-position: 50% 0%;
@@ -29,6 +41,7 @@
   }
 
   .container__card--text h2 {
+    text-align: left;
     margin: 0;
     color: 	#4C4E61;
     font-weight: 600;
@@ -36,7 +49,20 @@
   }
 
   .container__card--text p {
+    text-align: justify;
     margin: 0;
     color: #A3A5AE;
     font-weight: 400;
+  }
+
+  .container__card--text a {
+    display: block;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #4C4E61;
+    border-radius: .5rem;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    color: #FFF;
   }
