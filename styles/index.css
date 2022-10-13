@@ -1,9 +1,43 @@
+@import "./slideshow.css";
+ 
   body {
     margin: 0;
   }
 
+/* Navigation */
+  .container__navigation {
+    max-width: 1256px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .container__links {
+    display: inline-block;
+    padding: .5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .container__links a {
+    color: black;
+    font-family: sans-serif;
+    padding: 1rem 4rem 1rem 4rem;
+    background-color: #4C4E61;
+    border-radius: 0rem 0rem .5rem .5rem;
+    text-decoration: none;
+    font-weight: 400;
+    color: #FFF;
+    transition: 0.5s;
+  }
+
+  .container__links a:hover {
+    background-color: #000;
+    border-radius: 0rem 0rem .3rem .3rem;
+  }
+
+/* Cards */
   .container__cards {
-    max-width: 1600px;
+    max-width: 1256px;
     margin: 0 auto;
     text-align: center;
   }
@@ -65,4 +99,10 @@
     text-decoration: none;
     font-weight: 400;
     color: #FFF;
+    transition: 0.5s;
+  }
+
+  .container__card--text a:hover {
+    background-color: #000;
+    border-radius: .3rem;
   }
